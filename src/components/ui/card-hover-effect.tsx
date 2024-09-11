@@ -59,26 +59,29 @@ export const HoverEffect = ({
                             />
                         )}
                     </AnimatePresence>
-                    <Card>
-                        <CardTitle className="text-center mt-0">{item.title}</CardTitle>
+                    <Card className="flex flex-col items-center justify-center">
+                        <CardTitle className="text-center mt-0 text-lg text-white">
+                            {item.title}
+                        </CardTitle>
 
                         {/* Render myskill with image and name */}
-
-                        {item.myskill.map(([imageUrl, skill], skillIdx) => (
-                            <div
-                                key={skillIdx}
-                                className="inline-flex items-center mx-1 mt-4"
-                            >
-                                <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-                                    <img
-                                        src={imageUrl}
-                                        alt={skill}
-                                        className="w-6 h-6 mr-2"
-                                    />{" "}
-                                    {skill}
-                                </button>
-                            </div>
-                        ))}
+                        <div className="flex justify-center flex-wrap mt-4">
+                            {item.myskill.map(([imageUrl, skill], skillIdx) => (
+                                <div
+                                    key={skillIdx}
+                                    className="inline-flex items-center mx-2 mt-2"
+                                >
+                                    <button className="flex items-center shadow-[0_0_0_3px_#000000_inset] px-4 py-2 bg-transparent border border-black dark:border-gray-600 dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
+                                        <img
+                                            src={imageUrl}
+                                            alt={skill}
+                                            className="w-6 h-6 mr-2"
+                                        />
+                                        {skill}
+                                    </button>
+                                </div>
+                            ))}
+                        </div>
                     </Card>
                 </div>
             ))}
@@ -93,10 +96,10 @@ export const Card = ({
     className?: string;
     children: React.ReactNode;
 }) => {
-    return (
+    return ( //from-indigo-500 via-purple-500
         <div
             className={cn(
-                "rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
+                "rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-indigo-500 relative z-20",
                 className
             )}
         >
