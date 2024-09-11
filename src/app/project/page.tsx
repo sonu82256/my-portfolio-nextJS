@@ -48,7 +48,7 @@ export default function page() {
                                         Versel
                                     </button>
                                 </div>
-                                <p className="mt-4">
+                                <p className="text-gray-300 mt-4">
                                     Movix is a movie discovery platform,
                                     empowering users to explore top trending
                                     movies, search, and filter films based on
@@ -141,7 +141,7 @@ export default function page() {
                                         Firebase Authenticatoin
                                     </button>
                                 </div>
-                                <p className="mt-4">
+                                <p className="mt-4 text-gray-300">
                                     Sonu Estate is a leading real estate agency
                                     that specializes in helping clients buy,
                                     sell, and rent properties in the most
