@@ -10,7 +10,7 @@ import { CiFacebook } from "react-icons/ci";
 import { MdOutlineMail } from "react-icons/md";
 
 
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function FloatingDockDemo() {
   const links = [

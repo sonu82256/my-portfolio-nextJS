@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
-import { LampContainer } from "../../components/ui/lamp";
+// import { motion } from "framer-motion";
+// import { LampContainer } from "../../components/ui/lamp";
 import { Timeline } from "@/components/ui/timeline";
 import Image from "next/image";
-import photo from "../../../public/images/sonuPhoto.png";
-import { Bio } from "@/data/constants";
+// import photo from "../../../public/images/sonuPhoto.png";
+// import { Bio } from "@/data/constants";
 import { Spotlight } from "@/components/ui/Spotlight";
 
 const page = () => {
@@ -65,7 +65,7 @@ const page = () => {
                         />
                         <div className="lg:mx-8 lg:mt-5 mt-8">
                             <div className="text-2xl lg:text-3xl font-semibold">
-                                St. Xavier's College, Ranchi
+                                St. Xavier&apos;s College, Ranchi
                             </div>
                             <div className="text-1xl lg:text-lg mt-2 font-semibold">
                                 {" "}

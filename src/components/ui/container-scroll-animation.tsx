@@ -1,18 +1,17 @@
-// container-scroll-animation.tsx
 "use client";
 import React, { useRef } from "react";
 import { useScroll, useTransform, motion, MotionValue } from "framer-motion";
 
 export const ContainerScroll = ({
     titleComponent,
-    descriptionComponent, // Add descriptionComponent prop
+    descriptionComponent,
     children,
 }: {
     titleComponent: string | React.ReactNode;
-    descriptionComponent: string | React.ReactNode; // Description type
+    descriptionComponent: string | React.ReactNode;
     children: React.ReactNode;
 }) => {
-    const containerRef = useRef<any>(null);
+    const containerRef = useRef<HTMLDivElement>(null); // Ref for the div element
     const { scrollYProgress } = useScroll({
         target: containerRef,
     });
@@ -63,7 +62,14 @@ export const ContainerScroll = ({
     );
 };
 
-export const Header = ({ translate, titleComponent }: any) => {
+// Define proper prop types for Header
+export const Header = ({
+    translate,
+    titleComponent,
+}: {
+    translate: MotionValue<number>; // Proper type for translate
+    titleComponent: string | React.ReactNode; // Define the proper type
+}) => {
     return (
         <motion.div
             style={{
@@ -76,9 +82,11 @@ export const Header = ({ translate, titleComponent }: any) => {
     );
 };
 
+// Define proper prop types for Card
 export const Card = ({
     rotate,
     scale,
+    translate,
     children,
 }: {
     rotate: MotionValue<number>;
