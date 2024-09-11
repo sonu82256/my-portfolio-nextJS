@@ -11,7 +11,7 @@ export default function page() {
                 <ContainerScroll
                     titleComponent={
                         <>
-                            <h1 className="text-4xl font-semibold text-black dark:text-white">
+                            <h1 className="text-4xl font-semibold text-white">
                                 <br />
                                 <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
                                     Movix Website
@@ -22,7 +22,7 @@ export default function page() {
                     descriptionComponent={
                         <div className="w-2/3 flex justify-center lg:mx-48 md:mx-32 mx-24">
                             <div>
-                                <h1 className="text-3xl font-bold text-black dark:text-white mt-8">
+                                <h1 className="text-3xl font-bold text-white mt-8">
                                     Movix
                                 </h1>
                                 <div className="mt-2 text-gray-300">
