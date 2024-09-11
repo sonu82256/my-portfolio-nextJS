@@ -1,7 +1,7 @@
 "use client";
 import { HoverEffect } from "../../components/ui/card-hover-effect";
 
-export default function CardHoverEffectDemo() {
+export default function page() {
     return (
         <>
             <div className="max-w-5xl mx-auto px-8 mt-36">
