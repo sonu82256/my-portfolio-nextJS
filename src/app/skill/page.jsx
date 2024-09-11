@@ -10,7 +10,7 @@ export default function page() {
         </>
     );
 }
-export const projects = [
+const projects = [
     {
         title: "Frontend",
         myskill: [
