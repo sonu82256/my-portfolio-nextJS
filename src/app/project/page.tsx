@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function page() {
     return (
         <>
-            <div className="flex flex-col overflow-hidden mt-28">
+            <div className="flex flex-col overflow-hidden md:mt-28 mt-56">
                 <ContainerScroll
                     titleComponent={
                         <>
@@ -20,35 +20,35 @@ export default function page() {
                         </>
                     }
                     descriptionComponent={
-                        <div className="w-2/3 flex justify-center lg:mx-48 md:mx-32 mx-24">
+                        <div className="md:w-2/3 md:flex md:justify-center lg:mx-48 md:mx-32 mx-8">
                             <div>
-                                <h1 className="text-3xl font-bold text-white mt-8">
+                                <h1 className="md:text-3xl font-bold text-white md:mt-8">
                                     Movix
                                 </h1>
                                 <div className="mt-2 text-gray-300">
                                     May 2023 - June 2023
                                 </div>
-                                <div className="mt-2">
-                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
+                                <div className="mt-2 ">
+                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-4 py-2 bg-transparent border border-black dark:border-blue-700 dark:text-white text-black rounded-lg font-semibold text-sm transform hover:-translate-y-1 transition duration-400">
                                         ReactJs
                                     </button>
-                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
+                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-4 py-2 bg-transparent border border-black dark:border-blue-700 dark:text-white text-black rounded-lg font-semibold text-sm transform hover:-translate-y-1 transition duration-400">
                                         React Router DOM
                                     </button>
-                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
+                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-4 py-2 bg-transparent border border-black dark:border-blue-700 dark:text-white text-black rounded-lg font-semibold text-sm transform hover:-translate-y-1 transition duration-400">
                                         Redux Toolkit
                                     </button>
-                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
+                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-4 py-2 bg-transparent border border-black dark:border-blue-700 dark:text-white text-black rounded-lg ffont-semibold text-sm transform hover:-translate-y-1 transition duration-400">
                                         CSS
                                     </button>
-                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
+                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-4 py-2 bg-transparent border border-black dark:border-blue-700 dark:text-white text-black rounded-lg font-semibold text-sm transform hover:-translate-y-1 transition duration-400">
                                         TMDB API
                                     </button>
-                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
+                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-4 py-2 bg-transparent border border-black dark:border-blue-700 dark:text-white text-black rounded-lg font-semibold text-sm transform hover:-translate-y-1 transition duration-400">
                                         Versel
                                     </button>
                                 </div>
-                                <p className="text-gray-300 mt-4">
+                                <p className="text-gray-300 mt-4 text-justify">
                                     Movix is a movie discovery platform,
                                     empowering users to explore top trending
                                     movies, search, and filter films based on
@@ -84,7 +84,7 @@ export default function page() {
                     />
                 </ContainerScroll>
             </div>
-            <div className="flex flex-col overflow-hidden">
+            <div className="flex flex-col overflow-hidden py-40 md:py-0 md:pt-0">
                 <ContainerScroll
                     titleComponent={
                         <>
@@ -97,7 +97,7 @@ export default function page() {
                         </>
                     }
                     descriptionComponent={
-                        <div className="w-2/3 flex justify-center lg:mx-48 md:mx-32 mx-24">
+                        <div className="md:w-2/3 md:flex md:justify-center lg:mx-48 md:mx-32 mx-8">
                             <div>
                                 <h1 className="text-3xl font-bold text-black dark:text-white mt-8">
                                     sonuEstate
@@ -105,43 +105,43 @@ export default function page() {
                                 <div className="mt-2 text-gray-300">
                                     June 2024 - Aug 2024
                                 </div>
-                                <div className="mt-2">
-                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
+                                <div className="mt-2 ">
+                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-4 py-2 bg-transparent border border-black dark:border-blue-700 dark:text-white text-black rounded-lg font-semibold text-sm transform hover:-translate-y-1 transition duration-400">
                                         ReactJs
                                     </button>
-                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
+                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-4 py-2 bg-transparent border border-black dark:border-blue-700 dark:text-white text-black rounded-lg font-semibold text-sm transform hover:-translate-y-1 transition duration-400">
                                         React Router DOM
                                     </button>
-                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
+                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-4 py-2 bg-transparent border border-black dark:border-blue-700 dark:text-white text-black rounded-lg font-semibold text-sm transform hover:-translate-y-1 transition duration-400">
                                         Redux Toolkit
                                     </button>
-                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
+                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-4 py-2 bg-transparent border border-black dark:border-blue-700 dark:text-white text-black rounded-lg font-semibold text-sm transform hover:-translate-y-1 transition duration-400">
                                         Tailwind CSS
                                     </button>
                                    
-                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
+                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-4 py-2 bg-transparent border border-black dark:border-blue-700 dark:text-white text-black rounded-lg font-semibold text-sm transform hover:-translate-y-1 transition duration-400">
                                         Firebase Store
                                     </button>
-                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
+                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-4 py-2 bg-transparent border border-black dark:border-blue-700 dark:text-white text-black rounded-lg font-semibold text-sm transform hover:-translate-y-1 transition duration-400">
                                         NodeJs
                                     </button>
-                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
+                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-4 py-2 bg-transparent border border-black dark:border-blue-700 dark:text-white text-black rounded-lg font-semibold text-sm transform hover:-translate-y-1 transition duration-400">
                                         ExpressJs
                                     </button>
-                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
+                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-4 py-2 bg-transparent border border-black dark:border-blue-700 dark:text-white text-black rounded-lg font-semibold text-sm transform hover:-translate-y-1 transition duration-400">
                                         MongoDb
                                     </button>
-                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
+                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-4 py-2 bg-transparent border border-black dark:border-blue-700 dark:text-white text-black rounded-lg font-semibold text-sm transform hover:-translate-y-1 transition duration-400">
                                         BcryptJs
                                     </button>
-                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
+                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-4 py-2 bg-transparent border border-black dark:border-blue-700 dark:text-white text-black rounded-lg font-semibold text-sm transform hover:-translate-y-1 transition duration-400">
                                         JSON Web Token
                                     </button>
-                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
+                                    <button className="mx-1 mt-2 shadow-[0_0_0_3px_#000000_inset] px-4 py-2 bg-transparent border border-black dark:border-blue-700 dark:text-white text-black rounded-lg font-semibold text-sm transform hover:-translate-y-1 transition duration-400">
                                         Firebase Authenticatoin
                                     </button>
                                 </div>
-                                <p className="mt-4 text-gray-300">
+                                <p className="mt-4 text-gray-300 text-justify">
                                     Sonu Estate is a leading real estate agency
                                     that specializes in helping clients buy,
                                     sell, and rent properties in the most
