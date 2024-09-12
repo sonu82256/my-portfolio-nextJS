@@ -71,7 +71,7 @@ export const HoverEffect = ({
                                     key={skillIdx}
                                     className="inline-flex items-center mx-2 mt-2"
                                 >
-                                    <button className="flex items-center shadow-[0_0_0_3px_#000000_inset] px-4 py-2 bg-transparent border border-black dark:border-gray-600 dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
+                                    <button className="flex items-center shadow-[0_0_0_3px_#000000_inset] px-3 md:px-4 py-2 bg-transparent border border-black dark:border-gray-600 dark:text-white text-black rounded-lg font-semibold transform hover:-translate-y-1 transition duration-400">
                                         <img
                                             src={imageUrl}
                                             alt={skill}

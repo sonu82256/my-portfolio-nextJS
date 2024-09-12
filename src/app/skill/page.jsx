@@ -6,7 +6,7 @@ export default function page() {
     return (
         <div className="">
             <BackgroundBeamsWithCollision>
-                <div className="max-w-5xl mx-auto px-8 mt-36">
+                <div className="max-w-5xl mx-auto px-2 mt-36">
                     <HoverEffect items={projects} />
                 </div>
             </BackgroundBeamsWithCollision>
