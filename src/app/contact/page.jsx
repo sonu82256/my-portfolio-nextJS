@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import { LampContainer } from "../../components/ui/lamp";
 import FooterDock from '../../components/FooterDock'
 
-const page = () => {
+const Contacts = () => {
     return (
         <>
-            <LampContainer className="pt-80 h-auto">
+            <LampContainer className="pt-80 md:h-auto">
                 <motion.h1
                     initial={{ opacity: 0.5, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -28,4 +28,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Contacts;

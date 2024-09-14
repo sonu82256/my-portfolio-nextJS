@@ -8,13 +8,14 @@ import { Bio } from "@/data/constants";
 
 const HeroSection = () => {
     return (
-        <div className=" h-full w-full rounded-md flex flex-col-reverse md:flex-row items-center justify-around relative overflow-hidden mx-auto py-10 md:py-0 px-10">
+        <div className="md:mb-32 h-full w-full rounded-md flex flex-col-reverse md:flex-row items-center justify-around relative overflow-hidden mx-auto py-10 md:py-0 px-10">
             {/* Left Content */}
             <div className="text-center md:text-left">
                 <Spotlight
                     className="-top-40 left-0 md:left-60 md:-top-20"
                     fill="white"
                 />
+
                 <div className="p-4 md:pt-48 relative z-10 w-full">
                     <h1 className="mt-10 md:mt-0 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
                         Hi, I am <br /> {Bio.name}

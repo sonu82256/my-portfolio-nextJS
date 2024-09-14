@@ -2,11 +2,11 @@
 import { HoverEffect } from "../../components/ui/card-hover-effect";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 
-export default function page() {
+export default function Skill() {
     return (
         <div className="">
             <BackgroundBeamsWithCollision>
-                <div className="max-w-5xl mx-auto px-2 mt-36">
+                <div className="max-w-5xl mx-auto px-2 ">
                     <HoverEffect items={projects} />
                 </div>
             </BackgroundBeamsWithCollision>

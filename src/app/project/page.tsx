@@ -3,11 +3,12 @@
 import React from "react";
 import { ContainerScroll } from "../../components/ui/container-scroll-animation";
 import Image from "next/image";
+import Edu from "./Project-card";
 
-export default function page() {
+export default function Projects() {
     return (
         <>
-            <div className="flex flex-col overflow-hidden md:mt-28 mt-56">
+            {/* <div className="flex flex-col overflow-hidden md:mt-28 ">
                 <ContainerScroll
                     titleComponent={
                         <>
@@ -20,7 +21,7 @@ export default function page() {
                         </>
                     }
                     descriptionComponent={
-                        <div className="md:w-2/3 md:flex md:justify-center lg:mx-48 md:mx-32 mx-8">
+                        <div className="md:w-2/3 md:flex md:justify-center lg:mx-48 md:mx-32 mx-6">
                             <div>
                                 <h1 className="md:text-3xl font-bold text-white md:mt-8">
                                     Movix
@@ -73,7 +74,6 @@ export default function page() {
                         </div>
                     } // Pass descriptionComponent here
                 >
-                    {/* Main Image */}
                     <Image
                         src={`https://github.com/sonu82256/Github-pics/blob/main/Movix-cover-page.png?raw=true`}
                         alt="hero"
@@ -83,8 +83,11 @@ export default function page() {
                         draggable={false}
                     />
                 </ContainerScroll>
-            </div>
-            <div className="flex flex-col overflow-hidden py-40 md:py-0 md:pt-0">
+            </div> */}
+
+
+            
+            <div className="flex flex-col overflow-hidden py-40 md:py-0 md:pt-0 mt-0">
                 <ContainerScroll
                     titleComponent={
                         <>
@@ -97,7 +100,7 @@ export default function page() {
                         </>
                     }
                     descriptionComponent={
-                        <div className="md:w-2/3 md:flex md:justify-center lg:mx-48 md:mx-32 mx-8">
+                        <div className="md:w-2/3 md:flex md:justify-center lg:mx-48 md:mx-32 mx-6">
                             <div>
                                 <h1 className="text-3xl font-bold text-black dark:text-white mt-8">
                                     sonuEstate
@@ -179,6 +182,8 @@ export default function page() {
                     />
                 </ContainerScroll>
             </div>
+            <div className="py-0"><Edu/></div>
+            
         </>
     );
 }

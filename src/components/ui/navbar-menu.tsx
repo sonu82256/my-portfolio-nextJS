@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link, { LinkProps } from "next/link"; // Import LinkProps from next/link
 import Image from "next/image";
+import { FaHamburger } from "react-icons/fa";
 
 const transition = {
     type: "spring",
@@ -28,9 +29,9 @@ export const MenuItem = ({
         <div onMouseEnter={() => setActive(item)} className="relative">
             <motion.p
                 transition={{ duration: 0.3 }}
-                className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white"
+                className="cursor-pointer text-black hover:opacity-[0.4] dark:text-white"
             >
-                {item}
+                {item.length === 0 ? <FaHamburger /> : item}
             </motion.p>
             {active !== null && (
                 <motion.div
